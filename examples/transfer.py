@@ -62,6 +62,4 @@ def first_transaction_example(private_key, my_address):
     account_info = algod_client.account_info(my_address)
     print("Final Account balance: {} microAlgos".format(account_info.get("amount")) + "\n")
 
-first_transaction_example(
-    "xAZp8u5vALq0+a8fpNotkR694mkW5YOFwLbG8bHMyqY9IBHOcBYtWRsIHjoyiQbkRJGc1OH10/KkXb5cIFQsig==", 
-    "HUQBDTTQCYWVSGYIDY5DFCIG4RCJDHGU4H25H4VELW7FYICUFSFG255KCQ")
+generate_algorand_keypair()
